@@ -1,0 +1,12 @@
+bin_PROGRAMS = rbmrun rbmtrain rbmrunx
+lib_LIBRARIES = librbm.a
+include_HEADERS = include/rbm.h include/cluster.h
+EXTRA_DIST = data
+rbmrun_SOURCES = rbmrun.c rbm.c
+rbmrun_LDADD = -lncurses -lm
+rbmrunx_SOURCES = rbmrunx.c rbm.c
+rbmrunx_LDADD = -lX11 -lm
+rbmtrain_SOURCES = rbmtrain.c rbm.c
+rbmtrain_CFLAGS = $(util_CFLAGS)
+rbmtrain_LDADD = $(util_LIBS) -lutil -lncurses -lm
+librbm_a_SOURCES = rbm.c cluster.c
