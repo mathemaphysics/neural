@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 #include "config.h"
 
 #define RBMPROB( E, T ) 1.0 / ( 1.0 + exp( E / T ) )

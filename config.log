@@ -49,32 +49,43 @@ PATH: /usr/lib64/openmpi/bin
 PATH: /opt/mathematica/Executables
 PATH: /space/rpdaly/bin
 PATH: /usr/lib64/openmpi/bin
+PATH: /opt/mathematica/Executables
+PATH: /space/rpdaly/bin
+PATH: /usr/lib64/openmpi/bin
+PATH: /opt/mathematica/Executables
+PATH: /space/rpdaly/bin
+PATH: /usr/lib64/openmpi/bin
 
 
 ## ----------- ##
 ## Core tests. ##
 ## ----------- ##
 
-configure:2124: checking for a BSD-compatible install
-configure:2192: result: /usr/bin/install -c
-configure:2203: checking whether build environment is sane
-configure:2240: result: yes
-configure:2302: checking for gawk
-configure:2318: found /usr/bin/gawk
-configure:2329: result: gawk
-configure:2340: checking whether make sets $(MAKE)
-configure:2362: result: yes
-configure:2593: checking for gcc
-configure:2620: result: mpicc
-configure:2849: checking for C compiler version
-configure:2858: mpicc --version >&5
+configure:2147: checking for a BSD-compatible install
+configure:2215: result: /usr/bin/install -c
+configure:2226: checking whether build environment is sane
+configure:2281: result: yes
+configure:2319: WARNING: 'missing' script is too old or missing
+configure:2432: checking for a thread-safe mkdir -p
+configure:2471: result: /usr/bin/mkdir -p
+configure:2478: checking for gawk
+configure:2494: found /usr/bin/gawk
+configure:2505: result: gawk
+configure:2516: checking whether make sets $(MAKE)
+configure:2538: result: yes
+configure:2567: checking whether make supports nested variables
+configure:2584: result: yes
+configure:2764: checking for gcc
+configure:2791: result: mpicc
+configure:3020: checking for C compiler version
+configure:3029: mpicc --version >&5
 gcc (GCC) 5.1.1 20150618 (Red Hat 5.1.1-4)
 Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:2869: $? = 0
-configure:2858: mpicc -v >&5
+configure:3040: $? = 0
+configure:3029: mpicc -v >&5
 Using built-in specs.
 COLLECT_GCC=/usr/bin/gcc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/5.1.1/lto-wrapper
@@ -82,63 +93,69 @@ Target: x86_64-redhat-linux
 Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --disable-libgcj --with-default-libstdcxx-abi=c++98 --with-isl --enable-libmpx --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 5.1.1 20150618 (Red Hat 5.1.1-4) (GCC) 
-configure:2869: $? = 0
-configure:2858: mpicc -V >&5
+configure:3040: $? = 0
+configure:3029: mpicc -V >&5
 gcc: error: unrecognized command line option '-V'
 gcc: fatal error: no input files
 compilation terminated.
-configure:2869: $? = 1
-configure:2858: mpicc -qversion >&5
+configure:3040: $? = 1
+configure:3029: mpicc -qversion >&5
 gcc: error: unrecognized command line option '-qversion'
 gcc: fatal error: no input files
 compilation terminated.
-configure:2869: $? = 1
-configure:2889: checking whether the C compiler works
-configure:2911: mpicc    conftest.c  >&5
-configure:2915: $? = 0
-configure:2963: result: yes
-configure:2966: checking for C compiler default output file name
-configure:2968: result: a.out
-configure:2974: checking for suffix of executables
-configure:2981: mpicc -o conftest    conftest.c  >&5
-configure:2985: $? = 0
-configure:3007: result: 
-configure:3029: checking whether we are cross compiling
-configure:3037: mpicc -o conftest    conftest.c  >&5
-configure:3041: $? = 0
-configure:3048: ./conftest
-configure:3052: $? = 0
-configure:3067: result: no
-configure:3072: checking for suffix of object files
-configure:3094: mpicc -c   conftest.c >&5
-configure:3098: $? = 0
-configure:3119: result: o
-configure:3123: checking whether we are using the GNU C compiler
-configure:3142: mpicc -c   conftest.c >&5
-configure:3142: $? = 0
-configure:3151: result: yes
-configure:3160: checking whether mpicc accepts -g
-configure:3180: mpicc -c -g  conftest.c >&5
-configure:3180: $? = 0
-configure:3221: result: yes
-configure:3238: checking for mpicc option to accept ISO C89
-configure:3301: mpicc  -c -g -O2  conftest.c >&5
-configure:3301: $? = 0
-configure:3314: result: none needed
-configure:3345: checking for style of include used by make
-configure:3373: result: GNU
-configure:3401: checking dependency style of mpicc
-configure:3491: result: gcc3
-configure:3551: checking for ranlib
-configure:3567: found /usr/bin/ranlib
-configure:3578: result: ranlib
-configure:3610: checking how to run the C preprocessor
-configure:3641: mpicc -E  conftest.c
-configure:3641: $? = 0
-configure:3655: mpicc -E  conftest.c
+configure:3040: $? = 1
+configure:3060: checking whether the C compiler works
+configure:3082: mpicc    conftest.c  >&5
+configure:3086: $? = 0
+configure:3134: result: yes
+configure:3137: checking for C compiler default output file name
+configure:3139: result: a.out
+configure:3145: checking for suffix of executables
+configure:3152: mpicc -o conftest    conftest.c  >&5
+configure:3156: $? = 0
+configure:3178: result: 
+configure:3200: checking whether we are cross compiling
+configure:3208: mpicc -o conftest    conftest.c  >&5
+configure:3212: $? = 0
+configure:3219: ./conftest
+configure:3223: $? = 0
+configure:3238: result: no
+configure:3243: checking for suffix of object files
+configure:3265: mpicc -c   conftest.c >&5
+configure:3269: $? = 0
+configure:3290: result: o
+configure:3294: checking whether we are using the GNU C compiler
+configure:3313: mpicc -c   conftest.c >&5
+configure:3313: $? = 0
+configure:3322: result: yes
+configure:3331: checking whether mpicc accepts -g
+configure:3351: mpicc -c -g  conftest.c >&5
+configure:3351: $? = 0
+configure:3392: result: yes
+configure:3409: checking for mpicc option to accept ISO C89
+configure:3472: mpicc  -c -g -O2  conftest.c >&5
+configure:3472: $? = 0
+configure:3485: result: none needed
+configure:3510: checking whether mpicc understands -c and -o together
+configure:3532: mpicc -c conftest.c -o conftest2.o
+configure:3535: $? = 0
+configure:3532: mpicc -c conftest.c -o conftest2.o
+configure:3535: $? = 0
+configure:3547: result: yes
+configure:3575: checking for style of include used by make
+configure:3603: result: GNU
+configure:3629: checking dependency style of mpicc
+configure:3740: result: gcc3
+configure:3798: checking for ranlib
+configure:3814: found /usr/bin/ranlib
+configure:3825: result: ranlib
+configure:3857: checking how to run the C preprocessor
+configure:3888: mpicc -E  conftest.c
+configure:3888: $? = 0
+configure:3902: mpicc -E  conftest.c
 conftest.c:11:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
-configure:3655: $? = 1
+configure:3902: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "neural"
@@ -151,13 +168,13 @@ configure: failed program was:
 | #define VERSION "0.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:3680: result: mpicc -E
-configure:3700: mpicc -E  conftest.c
-configure:3700: $? = 0
-configure:3714: mpicc -E  conftest.c
+configure:3927: result: mpicc -E
+configure:3947: mpicc -E  conftest.c
+configure:3947: $? = 0
+configure:3961: mpicc -E  conftest.c
 conftest.c:11:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
-configure:3714: $? = 1
+configure:3961: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "neural"
@@ -170,65 +187,65 @@ configure: failed program was:
 | #define VERSION "0.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:3743: checking for grep that handles long lines and -e
-configure:3801: result: /usr/bin/grep
-configure:3806: checking for egrep
-configure:3868: result: /usr/bin/grep -E
-configure:3873: checking for ANSI C header files
-configure:3893: mpicc -c -g -O2  conftest.c >&5
-configure:3893: $? = 0
-configure:3966: mpicc -o conftest -g -O2   conftest.c  >&5
-configure:3966: $? = 0
-configure:3966: ./conftest
-configure:3966: $? = 0
-configure:3977: result: yes
-configure:3990: checking for sys/types.h
-configure:3990: mpicc -c -g -O2  conftest.c >&5
-configure:3990: $? = 0
-configure:3990: result: yes
-configure:3990: checking for sys/stat.h
-configure:3990: mpicc -c -g -O2  conftest.c >&5
-configure:3990: $? = 0
-configure:3990: result: yes
-configure:3990: checking for stdlib.h
-configure:3990: mpicc -c -g -O2  conftest.c >&5
-configure:3990: $? = 0
-configure:3990: result: yes
-configure:3990: checking for string.h
-configure:3990: mpicc -c -g -O2  conftest.c >&5
-configure:3990: $? = 0
-configure:3990: result: yes
-configure:3990: checking for memory.h
-configure:3990: mpicc -c -g -O2  conftest.c >&5
-configure:3990: $? = 0
-configure:3990: result: yes
-configure:3990: checking for strings.h
-configure:3990: mpicc -c -g -O2  conftest.c >&5
-configure:3990: $? = 0
-configure:3990: result: yes
-configure:3990: checking for inttypes.h
-configure:3990: mpicc -c -g -O2  conftest.c >&5
-configure:3990: $? = 0
-configure:3990: result: yes
-configure:3990: checking for stdint.h
-configure:3990: mpicc -c -g -O2  conftest.c >&5
-configure:3990: $? = 0
-configure:3990: result: yes
-configure:3990: checking for unistd.h
-configure:3990: mpicc -c -g -O2  conftest.c >&5
-configure:3990: $? = 0
-configure:3990: result: yes
-configure:4004: checking for stdlib.h
-configure:4004: result: yes
-configure:4016: checking for size_t
-configure:4016: mpicc -c -g -O2  conftest.c >&5
-configure:4016: $? = 0
-configure:4016: mpicc -c -g -O2  conftest.c >&5
+configure:3990: checking for grep that handles long lines and -e
+configure:4048: result: /usr/bin/grep
+configure:4053: checking for egrep
+configure:4115: result: /usr/bin/grep -E
+configure:4120: checking for ANSI C header files
+configure:4140: mpicc -c -g -O2  conftest.c >&5
+configure:4140: $? = 0
+configure:4213: mpicc -o conftest -g -O2   conftest.c  >&5
+configure:4213: $? = 0
+configure:4213: ./conftest
+configure:4213: $? = 0
+configure:4224: result: yes
+configure:4237: checking for sys/types.h
+configure:4237: mpicc -c -g -O2  conftest.c >&5
+configure:4237: $? = 0
+configure:4237: result: yes
+configure:4237: checking for sys/stat.h
+configure:4237: mpicc -c -g -O2  conftest.c >&5
+configure:4237: $? = 0
+configure:4237: result: yes
+configure:4237: checking for stdlib.h
+configure:4237: mpicc -c -g -O2  conftest.c >&5
+configure:4237: $? = 0
+configure:4237: result: yes
+configure:4237: checking for string.h
+configure:4237: mpicc -c -g -O2  conftest.c >&5
+configure:4237: $? = 0
+configure:4237: result: yes
+configure:4237: checking for memory.h
+configure:4237: mpicc -c -g -O2  conftest.c >&5
+configure:4237: $? = 0
+configure:4237: result: yes
+configure:4237: checking for strings.h
+configure:4237: mpicc -c -g -O2  conftest.c >&5
+configure:4237: $? = 0
+configure:4237: result: yes
+configure:4237: checking for inttypes.h
+configure:4237: mpicc -c -g -O2  conftest.c >&5
+configure:4237: $? = 0
+configure:4237: result: yes
+configure:4237: checking for stdint.h
+configure:4237: mpicc -c -g -O2  conftest.c >&5
+configure:4237: $? = 0
+configure:4237: result: yes
+configure:4237: checking for unistd.h
+configure:4237: mpicc -c -g -O2  conftest.c >&5
+configure:4237: $? = 0
+configure:4237: result: yes
+configure:4251: checking for stdlib.h
+configure:4251: result: yes
+configure:4263: checking for size_t
+configure:4263: mpicc -c -g -O2  conftest.c >&5
+configure:4263: $? = 0
+configure:4263: mpicc -c -g -O2  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:58:21: error: expected expression before ')' token
  if (sizeof ((size_t)))
                      ^
-configure:4016: $? = 1
+configure:4263: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "neural"
@@ -292,27 +309,29 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:4016: result: yes
-configure:4031: checking for stdlib.h
-configure:4031: result: yes
-configure:4041: checking for GNU libc compatible malloc
-configure:4065: mpicc -o conftest -g -O2   conftest.c  >&5
-configure:4065: $? = 0
-configure:4065: ./conftest
-configure:4065: $? = 0
-configure:4075: result: yes
-configure:4146: checking for pkg-config
-configure:4164: found /usr/bin/pkg-config
-configure:4176: result: /usr/bin/pkg-config
-configure:4201: checking pkg-config is at least version 0.9.0
-configure:4204: result: yes
-configure:4215: checking for util
-configure:4223: $PKG_CONFIG --exists --print-errors "util "
-configure:4226: $? = 0
-configure:4241: $PKG_CONFIG --exists --print-errors "util "
-configure:4244: $? = 0
-configure:4299: result: yes
-configure:4428: creating ./config.status
+configure:4263: result: yes
+configure:4278: checking for stdlib.h
+configure:4278: result: yes
+configure:4288: checking for GNU libc compatible malloc
+configure:4312: mpicc -o conftest -g -O2   conftest.c  >&5
+configure:4312: $? = 0
+configure:4312: ./conftest
+configure:4312: $? = 0
+configure:4322: result: yes
+configure:4398: checking for pkg-config
+configure:4416: found /usr/bin/pkg-config
+configure:4428: result: /usr/bin/pkg-config
+configure:4453: checking pkg-config is at least version 0.9.0
+configure:4456: result: yes
+configure:4466: checking for util
+configure:4473: $PKG_CONFIG --exists --print-errors "util "
+configure:4476: $? = 0
+configure:4490: $PKG_CONFIG --exists --print-errors "util "
+configure:4493: $? = 0
+configure:4551: result: yes
+configure:4667: checking that generated files are newer than configure
+configure:4673: result: done
+configure:4696: creating ./config.status
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -331,6 +350,10 @@ ac_cv_env_LDFLAGS_set=
 ac_cv_env_LDFLAGS_value=
 ac_cv_env_LIBS_set=
 ac_cv_env_LIBS_value=
+ac_cv_env_PKG_CONFIG_LIBDIR_set=
+ac_cv_env_PKG_CONFIG_LIBDIR_value=
+ac_cv_env_PKG_CONFIG_PATH_set=set
+ac_cv_env_PKG_CONFIG_PATH_value=/space/rpdaly/local/pkgconfig
 ac_cv_env_PKG_CONFIG_set=
 ac_cv_env_PKG_CONFIG_value=
 ac_cv_env_build_alias_set=
@@ -359,6 +382,7 @@ ac_cv_path_EGREP='/usr/bin/grep -E'
 ac_cv_path_GREP=/usr/bin/grep
 ac_cv_path_ac_pt_PKG_CONFIG=/usr/bin/pkg-config
 ac_cv_path_install='/usr/bin/install -c'
+ac_cv_path_mkdir=/usr/bin/mkdir
 ac_cv_prog_AWK=gawk
 ac_cv_prog_CPP='mpicc -E'
 ac_cv_prog_ac_ct_CC=mpicc
@@ -368,6 +392,8 @@ ac_cv_prog_cc_g=yes
 ac_cv_prog_make_make_set=yes
 ac_cv_type_size_t=yes
 am_cv_CC_dependencies_compiler_type=gcc3
+am_cv_make_support_nested_variables=yes
+am_cv_prog_cc_c_o=yes
 pkg_cv_util_CFLAGS='-I/space/rpdaly/local/util/include '
 pkg_cv_util_LIBS='-L/space/rpdaly/local/util/lib -lm -lutil '
 
@@ -375,14 +401,18 @@ pkg_cv_util_LIBS='-L/space/rpdaly/local/util/lib -lm -lutil '
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /space/rpdaly/proj/neural/missing --run aclocal-1.9'
+ACLOCAL='aclocal-1.15'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
-AMTAR='${SHELL} /space/rpdaly/proj/neural/missing --run tar'
-AUTOCONF='${SHELL} /space/rpdaly/proj/neural/missing --run autoconf'
-AUTOHEADER='${SHELL} /space/rpdaly/proj/neural/missing --run autoheader'
-AUTOMAKE='${SHELL} /space/rpdaly/proj/neural/missing --run automake-1.9'
+AMTAR='$${TAR-tar}'
+AM_BACKSLASH='\'
+AM_DEFAULT_V='$(AM_DEFAULT_VERBOSITY)'
+AM_DEFAULT_VERBOSITY='1'
+AM_V='$(V)'
+AUTOCONF='autoconf'
+AUTOHEADER='autoheader'
+AUTOMAKE='automake-1.15'
 AWK='gawk'
 CC='mpicc'
 CCDEPMODE='depmode=gcc3'
@@ -401,12 +431,13 @@ GREP='/usr/bin/grep'
 INSTALL_DATA='${INSTALL} -m 644'
 INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
-INSTALL_STRIP_PROGRAM='${SHELL} $(install_sh) -c -s'
+INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
 LDFLAGS=''
 LIBOBJS=''
 LIBS=''
 LTLIBOBJS=''
-MAKEINFO='${SHELL} /space/rpdaly/proj/neural/missing --run makeinfo'
+MAKEINFO='makeinfo'
+MKDIR_P='/usr/bin/mkdir -p'
 OBJEXT='o'
 PACKAGE='neural'
 PACKAGE_BUGREPORT='ryan-p-daly@uiowa.edu'
@@ -417,19 +448,25 @@ PACKAGE_URL=''
 PACKAGE_VERSION='0.1'
 PATH_SEPARATOR=':'
 PKG_CONFIG='/usr/bin/pkg-config'
+PKG_CONFIG_LIBDIR=''
+PKG_CONFIG_PATH='/space/rpdaly/local/pkgconfig'
 RANLIB='ranlib'
 SET_MAKE=''
 SHELL='/bin/sh'
 STRIP=''
 VERSION='0.1'
 ac_ct_CC='mpicc'
+am__EXEEXT_FALSE=''
+am__EXEEXT_TRUE='#'
 am__fastdepCC_FALSE='#'
 am__fastdepCC_TRUE=''
 am__include='include'
+am__isrc=''
 am__leading_dot='.'
+am__nodep='_no'
 am__quote=''
-am__tar='${AMTAR} chof - "$$tardir"'
-am__untar='${AMTAR} xf -'
+am__tar='$${TAR-tar} chof - "$$tardir"'
+am__untar='$${TAR-tar} xf -'
 bindir='${exec_prefix}/bin'
 build_alias=''
 datadir='${datarootdir}'
@@ -441,13 +478,13 @@ host_alias=''
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='/space/rpdaly/proj/neural/install-sh'
+install_sh='${SHELL} /space/rpdaly/proj/neural/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
 localstatedir='${prefix}/var'
 mandir='${datarootdir}/man'
-mkdir_p='mkdir -p --'
+mkdir_p='$(MKDIR_P)'
 oldincludedir='/usr/include'
 pdfdir='${docdir}'
 prefix='/space/rpdaly/local/neural'
@@ -504,11 +541,11 @@ generated by GNU Autoconf 2.69.  Invocation command line was
 
 on serv16.divms.uiowa.edu
 
-config.status:850: creating Makefile
-config.status:953: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
-config.status:850: creating neural.pc
-config.status:850: creating config.h
-config.status:1072: executing depfiles commands
+config.status:862: creating Makefile
+config.status:862: creating neural.pc
+config.status:862: creating config.h
+config.status:1043: config.h is unchanged
+config.status:1091: executing depfiles commands
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -525,4 +562,23 @@ generated by GNU Autoconf 2.69.  Invocation command line was
 
 on serv16.divms.uiowa.edu
 
-config.status:850: creating config.h
+config.status:862: creating config.h
+config.status:1043: config.h is unchanged
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by neural config.status 0.1, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status Makefile depfiles
+
+on serv16.divms.uiowa.edu
+
+config.status:862: creating Makefile
+config.status:1091: executing depfiles commands

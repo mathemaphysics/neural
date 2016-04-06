@@ -6,6 +6,7 @@
 #include <math.h>
 #include <time.h>
 #include <X11/Xlib.h>
+#include "config.h"
 
 typedef struct
 {

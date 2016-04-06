@@ -20,7 +20,7 @@ rbmtrain-rbm.o: rbm.c /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
  /usr/include/bits/inf.h /usr/include/bits/nan.h \
  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
- /usr/include/bits/mathinline.h config.h
+ /usr/include/bits/mathinline.h /usr/include/xlocale.h config.h
 
 /usr/include/stdc-predef.h:
 
@@ -109,5 +109,7 @@ rbmtrain-rbm.o: rbm.c /usr/include/stdc-predef.h /usr/include/stdio.h \
 /usr/include/bits/mathcalls.h:
 
 /usr/include/bits/mathinline.h:
+
+/usr/include/xlocale.h:
 
 config.h:

@@ -26,7 +26,7 @@ rbmrunx.o: rbmrunx.c /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
  /usr/include/bits/mathinline.h /usr/include/X11/Xlib.h \
  /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
- /usr/include/X11/Xosdefs.h
+ /usr/include/X11/Xosdefs.h config.h
 
 /usr/include/stdc-predef.h:
 
@@ -143,3 +143,5 @@ rbmrunx.o: rbmrunx.c /usr/include/stdc-predef.h /usr/include/stdio.h \
 /usr/include/X11/Xfuncproto.h:
 
 /usr/include/X11/Xosdefs.h:
+
+config.h:
