@@ -1,4 +1,4 @@
-prefix=/space/rpdaly/local/neural
+prefix=/home/rpdaly/local/neural/0.1
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
