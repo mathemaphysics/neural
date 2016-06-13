@@ -1,3 +1,4 @@
+// vim: tabstop=4:softtabstop=4:shiftwidth=4:expandtab:smarttab
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
