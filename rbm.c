@@ -460,19 +460,19 @@ int dbn_load( dbn_t *obj_in, char *fn_in )
     long i;
     FILE *fp;
     if( obj_in == NULL )
-	return -1;
+        return -1;
     if( obj_in->layers == NULL )
-	return -2;
+        return -2;
     fp = fopen( fn_in, "rb" );
     if( fp == NULL )
-	return -3;
+        return -3;
     for(i=0;i<obj_in->nlayer-1;i++)
     {
-	fread( &(obj_in->layers[i].nv), sizeof(long), (size_t) 1, fp );
-	fread( &(obj_in->layers[i].nh), sizeof(long), (size_t) 1, fp );
-	fread( obj_in->layers[i].vth, sizeof(double), (size_t) obj_in->layers[i].nv, fp );
-	fread( obj_in->layers[i].hth, sizeof(double), (size_t) obj_in->layers[i].nh, fp );
-	fread( obj_in->layers[i].wts, sizeof(double), (size_t) (obj_in->layers[i].nv*obj_in->layers[i].nh), fp );
+        fread( &(obj_in->layers[i].nv), sizeof(long), (size_t) 1, fp );
+        fread( &(obj_in->layers[i].nh), sizeof(long), (size_t) 1, fp );
+        fread( obj_in->layers[i].vth, sizeof(double), (size_t) obj_in->layers[i].nv, fp );
+        fread( obj_in->layers[i].hth, sizeof(double), (size_t) obj_in->layers[i].nh, fp );
+        fread( obj_in->layers[i].wts, sizeof(double), (size_t) (obj_in->layers[i].nv*obj_in->layers[i].nh), fp );
     }
     fclose( fp );
     return 0;
