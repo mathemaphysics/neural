@@ -1,3 +1,4 @@
+// vim: tabstop=4:softtabstop=4:shiftwidth=4:expandtab:smarttab
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -125,22 +126,22 @@ int main( int argc, char **argv )
 
 	/* Iterate through the DBN a few times and output the state to the X server */
 	for(;;)
-	{
-		for(i=0;i<8;i++)
-        	{
-                	rbm_update_vis( &dbn.layers[dbn.nlayer-2] );
-                	rbm_update_hid( &dbn.layers[dbn.nlayer-2] );
-        	}
-        	for(i=dbn.nlayer-2;i>=0;i--)
-                	rbm_update_vis( &dbn.layers[i] );
-		XClearWindow( display, win );
-		for(j=0;j<dbn.nlayer-1;j++)
-        		for(i=0;i<dbn.layers[j].nv;i++)
-               			if( dbn.layers[j].vis[i] == 1 )
-                       			XDrawLine( display, win, gc, 5+5*i, 20+j*5, 5+5*i+3, 20+j*5 );
-		for(i=0;i<dbn.layers[dbn.nlayer-2].nh;i++)
-			if( dbn.layers[dbn.nlayer-2].hid[i] == 1 )
-				XDrawLine( display, win, gc, 5+5*i, 20+(dbn.nlayer-1)*5, 5+5*i+3, 20+(dbn.nlayer-1)*5 );
+    {
+        for(i=0;i<8;i++)
+        {
+            rbm_update_vis( &dbn.layers[dbn.nlayer-2] );
+            rbm_update_hid( &dbn.layers[dbn.nlayer-2] );
+        }
+        for(i=dbn.nlayer-2;i>=0;i--)
+            rbm_update_vis( &dbn.layers[i] );
+        XClearWindow( display, win );
+        for(j=0;j<dbn.nlayer-1;j++)
+            for(i=0;i<dbn.layers[j].nv;i++)
+                if( dbn.layers[j].vis[i] == 1 )
+                    XDrawLine( display, win, gc, 5+5*i, 20+j*5, 5+5*i+3, 20+j*5 );
+        for(i=0;i<dbn.layers[dbn.nlayer-2].nh;i++)
+            if( dbn.layers[dbn.nlayer-2].hid[i] == 1 )
+                XDrawLine( display, win, gc, 5+5*i, 20+(dbn.nlayer-1)*5, 5+5*i+3, 20+(dbn.nlayer-1)*5 );
 		XFlush( display );
 		usleep( 40000 );
 	}
