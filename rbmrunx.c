@@ -142,16 +142,16 @@ int main( int argc, char **argv )
         for(i=0;i<dbn.layers[dbn.nlayer-2].nh;i++)
             if( dbn.layers[dbn.nlayer-2].hid[i] == 1 )
                 XDrawLine( display, win, gc, 5+5*i, 20+(dbn.nlayer-1)*5, 5+5*i+3, 20+(dbn.nlayer-1)*5 );
-		XFlush( display );
-		usleep( 40000 );
-	}
+        XFlush( display );
+        usleep( 40000 );
+    }
 
-	/* Clean up the network trash */
-	dbn_free( &dbn );
+    /* Clean up the network trash */
+    dbn_free( &dbn );
 
-	/* Close the display and exit */
-	XCloseDisplay( display );
+    /* Close the display and exit */
+    XCloseDisplay( display );
 
-	return 0;
+    return 0;
 }
 
