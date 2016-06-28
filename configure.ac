@@ -9,6 +9,7 @@ AC_CONFIG_HEADER([config.h])
 
 # Checks for programs.
 AC_PROG_CC
+AM_PROG_CC_C_O
 AC_PROG_RANLIB
 
 # Checks for libraries.
@@ -25,5 +26,6 @@ AC_FUNC_MALLOC
 
 PKG_CHECK_MODULES( util, util )
 
-AC_CONFIG_FILES( [Makefile] [neural.pc] )
+AC_CONFIG_FILES( [Makefile] [neural.pc] [objc/Makefile] )
 AC_OUTPUT
+
