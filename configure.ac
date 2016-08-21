@@ -26,6 +26,6 @@ AC_FUNC_MALLOC
 
 PKG_CHECK_MODULES( util, util )
 
-AC_CONFIG_FILES( [Makefile] [neural.pc] [objc/Makefile] )
+AC_CONFIG_FILES( [Makefile] [neural.pc] )
 AC_OUTPUT
 
