@@ -1,8 +1,8 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ(2.59)
-AC_INIT(neural, 0.1, ryan-p-daly@uiowa.edu)
+AC_PREREQ([2.69])
+AC_INIT([neural],[0.1],[ryan-p-daly@uiowa.edu])
 AM_INIT_AUTOMAKE()
 AC_CONFIG_SRCDIR([rbmrun.c])
 AC_CONFIG_HEADER([config.h])
