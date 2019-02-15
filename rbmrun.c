@@ -4,6 +4,7 @@
 #include <math.h>
 #include <time.h>
 #include <ncurses.h>
+#include "include/rbm.h"
 #include "config.h"
 
 typedef struct
