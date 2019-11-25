@@ -7,25 +7,6 @@
 #include "include/rbm.h"
 #include "config.h"
 
-typedef struct
-{
-    long nv;
-    long nh;
-    char *vis;
-    char *hid;
-    double *vth;
-    double *hth;
-    double *wts;
-    double temp;
-} rbm_t;
-
-typedef struct
-{
-    long nlayer;
-    rbm_t *layers;
-    double temp;
-} dbn_t;
-
 void dbn_print_curses( dbn_t *obj_in )
 {
 	int i,j;
@@ -75,7 +56,7 @@ void dbn_run( dbn_t *obj_in )
 	endwin();
 }
 
-inline void usage()
+void usage()
 {
     printf( "%s\n", PACKAGE_STRING );
     printf( "Usage: rbmrun [params] [temp]\n" );

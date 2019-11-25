@@ -71,7 +71,7 @@ typedef struct
 //        endwin();
 //}
 
-inline void usage()
+void usage()
 {
     printf( "%s\n", PACKAGE_STRING );
     printf( "Usage: rbmtrain [nlayer] [lsizes] [train-file]\n" );

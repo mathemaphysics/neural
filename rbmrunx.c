@@ -7,26 +7,8 @@
 #include <math.h>
 #include <time.h>
 #include <X11/Xlib.h>
+#include "include/rbm.h"
 #include "config.h"
-
-typedef struct
-{
-    long nv;
-    long nh;
-    char *vis;
-    char *hid;
-    double *vth;
-    double *hth;
-    double *wts;
-    double temp;
-} rbm_t;
-
-typedef struct
-{
-    long nlayer;
-    rbm_t *layers;
-    double temp;
-} dbn_t;
 
 int main( int argc, char **argv )
 {

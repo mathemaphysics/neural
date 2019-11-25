@@ -1,0 +1,5 @@
+project('neural', 'c')
+deps = dependency('util')
+depsx = dependency('X11')
+executable('rbmrun', 'rbmrun.c', dependencies : [deps])
+executable('rbmrunx', 'rbmrunx.c', dependencies : [deps, depsx])
